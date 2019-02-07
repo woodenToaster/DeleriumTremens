@@ -24,4 +24,7 @@ void UDTGameInstance::Shutdown()
 	Super::Shutdown();
 }
 
-
+void UDTGameInstance::OnViewportResize_Internal(FViewport* Viewport, uint32 ID)
+{
+    OnViewportResize();
+}
